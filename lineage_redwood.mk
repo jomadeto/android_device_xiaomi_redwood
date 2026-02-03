@@ -21,6 +21,7 @@ PRODUCT_MODEL := 22101320G
 PRODUCT_NAME := lineage_redwood
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+WITH_GMS := true
 
 PRODUCT_SYSTEM_NAME := redwood_global
 PRODUCT_SYSTEM_DEVICE := redwood
@@ -31,6 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Exclude apps
-TARGET_DISABLE_MATLOG := true
-TARGET_EXCLUDES_AUDIOFX := true
+# Boot animaton
+TARGET_BOOT_ANIMATION_RES := 1080
